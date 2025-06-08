@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bootstrap Page</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .nav-link.active {
+        color: blue !important;
+      }
+      .bg-orange {
+        background-color: #e67e22 !important;
+      }
+      .bg-light-orange {
+        background-color: #d4a574 !important;
+      }
+
+      /* Logo container styling */
+      .logo-container {
+        background-color: white;
+        max-width: 400px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      /* FPT Logo letters */
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      .logo-letter {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+        margin-right: 5px;
+        border-radius: 3px;
+      }
+
+      .logo-f {
+        background-color: #3498db;
+      }
+
+      .logo-p {
+        background-color: #e67e22;
+      }
+
+      .logo-t {
+        background-color: #27ae60;
+      }
+
+      .education-text {
+        color: #3498db;
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: normal;
+      }
+
+      .university-title {
+        color: #e67e22;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+      }
+
+      /* Navigation styling */
+      .nav-menu {
+        text-align: center;
+      }
+
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      /* .nav-menu a:hover {
+        text-decoration: underline;
+      } */
+
+      /* Main content styling */
+      .main-content {
+        background-color: #f8f9fa;
+        padding: 40px 20px;
+        min-height: 300px;
+      }
+
+      .content-section {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .section-text {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="bg-orange p-4">
+        <div class="container">
+          <img
+            style="display: grid"
+            src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg/1200px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg.png"
+            alt="Logo"
+            class="logo-container mb-3"
+          />
+          <!-- Navigation Menu -->
+          <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-section">
+        <!-- About Section -->
+        <div class="mb-4">
+          <h2 class="section-title">About</h2>
+          <p class="section-text">This is the about section of the website.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-text">
+            For any inquiries, please contact us at example@example.com.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light-orange text-white text-center p-3 mt-4">
+      © 2023 Website. All rights reserved.
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  </body>
+</html>

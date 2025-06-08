@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bootstrap Page</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .header-section {
+        background-color: #e9ecef;
+        padding: 30px 20px;
+      }
+      .header-section h2 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: normal;
+        color: #333;
+      }
+      .nav-section {
+        padding: 20px;
+        background-color: #fff;
+      }
+      .nav-link {
+        color: #007bff !important;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: normal;
+      }
+      .nav-link:hover {
+        color: #0056b3 !important;
+      }
+      .nav-link.disabled {
+        color: #6c757d !important;
+        pointer-events: none;
+      }
+      .grid-section {
+        padding: 0 20px;
+        background-color: #fff;
+      }
+      .grid-item {
+        background-color: #ccc;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        border: 1px solid #999;
+        margin-bottom: 0;
+        color: #333;
+      }
+      .footer {
+        background-color: #c9aba0;
+        color: #000;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header-section">
+      <div class="container-fluid">
+        <h2>Let's test the grid!</h2>
+      </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+      <div class="container-fluid">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" href="#">Link</a>
+          <a class="nav-link active" href="#">Link</a>
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Grid Section -->
+    <div class="grid-section">
+      <div class="container-fluid">
+        <!-- First row: 2 columns -->
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="grid-item">First col</div>
+          </div>
+          <div class="col-md-6">
+            <div class="grid-item">Second col</div>
+          </div>
+        </div>
+
+        <!-- Second row: 3 columns -->
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="grid-item">col</div>
+          </div>
+          <div class="col-md-4">
+            <div class="grid-item">col</div>
+          </div>
+          <div class="col-md-4">
+            <div class="grid-item">col</div>
+          </div>
+        </div>
+
+        <!-- Third row: 4 columns -->
+        <div class="row g-0">
+          <div class="col-md-3">
+            <div class="grid-item">col</div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-item">col</div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-item">col</div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-item">col</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">Created by ABC!</footer>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  </body>
+</html>
