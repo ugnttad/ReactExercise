@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { initialQuizData } from '../data/quizData';
+import { initialQuizData } from '../data/QuizData.js';
 
 const QuizContext = createContext();
 
