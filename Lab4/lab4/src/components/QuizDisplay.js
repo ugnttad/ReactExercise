@@ -72,7 +72,7 @@ const QuizDisplay = () => {
 
   return (
     <div style={styles.card}>
-      <h2 style={styles.cardTitle}>🎯 Quiz Questions</h2>
+      <h2 style={styles.cardTitle}>Quiz Questions</h2>
       
       {questions.map((question, questionIndex) => (
         <div key={question.id} style={styles.questionCard}>
@@ -143,7 +143,7 @@ const QuizDisplay = () => {
             onMouseEnter={(e) => handleButtonHover(e, Object.keys(selectedAnswers).length === questions.length)}
             onMouseLeave={(e) => handleButtonLeave(e, Object.keys(selectedAnswers).length === questions.length)}
           >
-            🎯 Check Answers
+            Check Answers
           </button>
         ) : (
           <button
@@ -159,7 +159,7 @@ const QuizDisplay = () => {
 
       {showResults && (
         <div style={styles.resultCard}>
-          <h3 style={styles.resultTitle}>🏆 Quiz Results</h3>
+          <h3 style={styles.resultTitle}>Quiz Results</h3>
           <p style={styles.resultScore}>
             You scored {getScore()} out of {questions.length} questions correctly!
           </p>
@@ -168,7 +168,7 @@ const QuizDisplay = () => {
           </p>
           {getScore() === questions.length && (
             <p style={{...styles.resultScore, color: '#4caf50', fontWeight: 'bold'}}>
-              🎉 Perfect Score! Congratulations!
+              Perfect Score! Congratulations!
             </p>
           )}
         </div>

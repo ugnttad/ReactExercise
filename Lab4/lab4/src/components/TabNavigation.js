@@ -25,7 +25,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
         onMouseEnter={(e) => handleTabHover(e, activeTab === 'quiz')}
         onMouseLeave={(e) => handleTabLeave(e, activeTab === 'quiz')}
       >
-        🎯 Take Quiz
+        Take Quiz
       </button>
       <button
         onClick={() => setActiveTab('add')}
@@ -36,7 +36,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
         onMouseEnter={(e) => handleTabHover(e, activeTab === 'add')}
         onMouseLeave={(e) => handleTabLeave(e, activeTab === 'add')}
       >
-        ➕ Add Questions
+        Add Questions
       </button>
     </div>
   );

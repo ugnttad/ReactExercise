@@ -47,7 +47,7 @@ const App = () => {
       <div style={styles.container}>
         <div style={styles.mainWrapper}>
           <h1 style={styles.title}>
-            🚀 Lab 4: React Quiz App with Hooks
+            React Quiz App
           </h1>
 
           <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
