@@ -1,74 +1,54 @@
 import React, { useState } from 'react';
 
-const DragDropList = () => {
-  const [items, setItems] = useState([
-    { id: 1, text: 'Học React' },
-    { id: 2, text: 'Làm bài tập' },
-    { id: 3, text: 'Đi chơi' },
-    { id: 4, text: 'Đọc sách' },
-    { id: 5, text: 'Xem phim' }
-  ]);
-  const [draggedItem, setDraggedItem] = useState(null);
-  
-  const handleDragStart = (e, item) => {
-    setDraggedItem(item);
-    e.dataTransfer.effectAllowed = 'move';
+function DragDropList() {
+  const [items, setItems] = useState(['Apple', 'Banana', 'Cherry', 'Date', 'Grape']);
+  const [draggingItem, setDraggingItem] = useState(null);
+
+  const handleDragStart = (index) => {
+    setDraggingItem(index);
   };
-  
-  const handleDragOver = (e) => {
-    e.preventDefault();
-    e.dataTransfer.dropEffect = 'move';
+
+  const handleDragOver = (event, index) => {
+    event.preventDefault(); // Necessary to allow dropping
   };
-  
-  const handleDrop = (e, targetItem) => {
-    e.preventDefault();
-    if (!draggedItem || draggedItem.id === targetItem.id) return;
-    
-    const draggedIndex = items.findIndex(item => item.id === draggedItem.id);
-    const targetIndex = items.findIndex(item => item.id === targetItem.id);
+
+  const handleDrop = (index) => {
+    if (draggingItem === null) return;
     
     const newItems = [...items];
-    newItems.splice(draggedIndex, 1);
-    newItems.splice(targetIndex, 0, draggedItem);
+    const draggedItem = newItems.splice(draggingItem, 1)[0];
+    newItems.splice(index, 0, draggedItem);
     
     setItems(newItems);
-    setDraggedItem(null);
+    setDraggingItem(null);
   };
-  
+
   return (
     <div>
-      <h2>Bài tập 7: Drag Drop List</h2>
-      <p style={{ color: '#666', marginBottom: '15px' }}>
-        Kéo và thả để sắp xếp lại danh sách
-      </p>
+      <h2>Drag and Drop List</h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
-        {items.map(item => (
+        {items.map((item, index) => (
           <li
-            key={item.id}
+            key={item}
             draggable
-            onDragStart={(e) => handleDragStart(e, item)}
-            onDragOver={handleDragOver}
-            onDrop={(e) => handleDrop(e, item)}
+            onDragStart={() => handleDragStart(index)}
+            onDragOver={(event) => handleDragOver(event, index)}
+            onDrop={() => handleDrop(index)}
             style={{
-              padding: '12px',
-              marginBottom: '8px',
-              backgroundColor: draggedItem?.id === item.id ? '#e3f2fd' : '#f8f9fa',
-              border: '1px solid #dee2e6',
-              borderRadius: '4px',
+              padding: '8px',
+              margin: '4px',
+              backgroundColor: draggingItem === index ? '#e0e0e0' : '#f9f9f9',
+              border: '1px solid #ccc',
               cursor: 'move',
-              userSelect: 'none',
-              transition: 'all 0.2s ease'
+              borderRadius: '4px'
             }}
-            onMouseEnter={(e) => e.target.style.backgroundColor = '#e9ecef'}
-            onMouseLeave={(e) => e.target.style.backgroundColor = draggedItem?.id === item.id ? '#e3f2fd' : '#f8f9fa'}
           >
-            <span style={{ marginRight: '10px' }}>⋮⋮</span>
-            {item.text}
+            {item}
           </li>
         ))}
       </ul>
     </div>
   );
-};
+}
 
 export default DragDropList;

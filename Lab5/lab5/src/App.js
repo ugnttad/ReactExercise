@@ -1,52 +1,31 @@
-import React from "react";
-import MyAdvancedForm from "./components/MyAdvancedForm";
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = () => {
-  // Hàm xử lý khi form được submit
-  const handleAdvancedFormSubmit = (formData) => {
-    console.log("=== THÔNG TIN ĐĂNG KÝ ===");
-    console.log("Tên:", formData.name);
-    console.log("Tuổi:", formData.age);
-    console.log("Email:", formData.email);
-    console.log("Số điện thoại:", formData.phone);
-    console.log("Giới tính:", formData.gender);
-    console.log("Đồng ý điều khoản:", formData.agreeTerms);
-    console.log("========================");
+// Import components
+import Navigation from './components/Navigation';
+import HomePage from './components/HomePage';
+import NewsPage from './components/NewsPage';
+import AboutPage from './components/AboutPage';
+import ContactPage from './components/ContactPage';
+import QuizPage from './components/QuizPage';
 
-    // Tạo thông báo chi tiết
-    const message = `
- ĐĂNG KÝ THÀNH CÔNG! 
-
-  Thông tin đã đăng ký:
-  Tên: ${formData.name}
-  Tuổi: ${formData.age}
-  Email: ${formData.email}
-  Số điện thoại: ${formData.phone}
-  Giới tính: ${formData.gender}
-  Đã đồng ý điều khoản
-
-Cảm ơn bạn đã đăng ký!
-    `;
-
-    alert(message);
-  };
-
+function App() {
   return (
-    <div className="App">
-      <div style={{
-        minHeight: '100vh',
-        backgroundColor: '#f8f9fa',
-        padding: '20px 0'
-      }}>
-        <MyAdvancedForm
-          title="Đăng Ký Người Dùng"
-          onSubmit={handleAdvancedFormSubmit}
-          showSuccessMessage={true}
-          resetAfterSubmit={true}
-        />
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/quiz" element={<QuizPage />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
-};
+}
 
 export default App;

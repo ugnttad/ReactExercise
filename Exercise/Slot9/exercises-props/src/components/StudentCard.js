@@ -28,7 +28,6 @@ alt={`${student.name}'s avatar`}
 <Button variant="primary">Edit</Button>
 <Button style={{ margin: "10px" }} variant="primary">Details</Button>
 
-
 </Card.Body>
 
 </Card>
