@@ -1,0 +1,40 @@
+{
+  "posts": [],
+  "useraccounts": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "123",
+      "avatar": "public/images/admin-avatar.jpg"
+    },
+    {
+      "id": "2",
+      "username": "janesmith",
+      "email": "jane.smith@example.com",
+      "password": "123",
+      "avatar": "public/images/janesmith-avatar.jpg"
+    },
+    {
+      "id": "3",
+      "username": "alicebrown",
+      "email": "alice.brown@example.com",
+      "password": "123",
+      "avatar": "public/images/alicebrown-avatar.jpg"
+    },
+    {
+      "id": "4",
+      "username": "bobjohnson",
+      "email": "bob.johnson@example.com",
+      "password": "123",
+      "avatar": "public/images/bobjohnson-avatar.jpg"
+    },
+    {
+      "id": "5",
+      "username": "charliewilliams",
+      "email": "charlie.williams@example.com",
+      "password": "123",
+      "avatar": "public/images/charliewilliams-avatar.jpg"
+    }
+  ]
+}

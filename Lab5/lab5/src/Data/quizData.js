@@ -1,4 +1,5 @@
 // src/data/quizData.js
+import "../assets/images/"
 export const quizQuestions = [
   {
     id: 1,
