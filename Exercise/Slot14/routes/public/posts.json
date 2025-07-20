@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "React Router Basics",
+        "content": "This post explains the basics of React Router in a React application. React Router is a powerful library that enables client-side routing in React applications, allowing you to create single-page applications with multiple views.",
+        "author": "John Doe",
+        "date": "2024-01-15"
+    },
+    {
+        "id": "2",
+        "title": "React Bootstrap Introduction",
+        "content": "This post introduces how to use React Bootstrap to create beautiful UIs. React Bootstrap provides pre-built components that follow Bootstrap's design principles, making it easy to create responsive and attractive user interfaces.",
+        "author": "Jane Smith",
+        "date": "2024-01-20"
+    },
+    {
+        "id": "3",
+        "title": "JavaScript ES6 Features",
+        "content": "This post discusses the new features introduced in JavaScript ES6. ES6 brought many powerful features like arrow functions, destructuring, template literals, and more that make JavaScript development more efficient and enjoyable.",
+        "author": "Mike Johnson",
+        "date": "2024-01-25"
+    },
+    {
+        "id": "4",
+        "title": "React Hooks Deep Dive",
+        "content": "Understanding React Hooks and how they revolutionized functional components. Hooks like useState, useEffect, and custom hooks provide powerful ways to manage state and side effects in functional components.",
+        "author": "Sarah Wilson",
+        "date": "2024-02-01"
+    }
+]

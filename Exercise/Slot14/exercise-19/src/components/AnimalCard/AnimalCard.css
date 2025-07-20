@@ -1,0 +1,81 @@
+.animal-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.animal-image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 430px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.animal-card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.animal-name {
+  color: #ff6b35;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.animal-info {
+  margin-bottom: 25px;
+}
+
+.animal-info p {
+  margin: 12px 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.animal-info strong {
+  color: #555;
+  font-weight: 600;
+}
+
+.more-info-btn {
+  width: 100%;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.more-info-btn:hover {
+  background: linear-gradient(45deg, #e55a2b, #e0841a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+}
+
+.more-info-btn:active {
+  transform: translateY(0);
+}
