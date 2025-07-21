@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "displayName": "Admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123456",
+      "displayName": "User",
+      "role": "user"
+    }
+  ],
+  "foods": [
+    {
+      "id": "1",
+      "name": "Bún Chả",
+      "description": "Thịt nướng thơm phức, bún tươi, nước mắm pha chua ngọt ăn cùng rau sống.",
+      "price": "45000",
+      "currentPrice": "35000",
+      "image": "photo_1.avif"
+    },
+    {
+      "id": "4",
+      "name": "Bánh Xèo",
+      "description": "Bánh xèo vàng giòn, nhân tôm thịt, giá đỗ, rau sống, chấm nước mắm pha.",
+      "price": "40000",
+      "currentPrice": "32000",
+      "image": "photo_4.avif"
+    },
+    {
+      "id": "5",
+      "name": "Chè Thái",
+      "description": "Nước cốt dừa, thạch, mít, nhãn, trái cây tươi mát, ăn lạnh.",
+      "price": "25000",
+      "currentPrice": "20000",
+      "image": "photo_5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Bún Riêu Cua",
+      "description": "Nước dùng thanh, gạch cua, bún tươi, riêu cua, đậu hũ, cà chua, rau sống.",
+      "price": "40000",
+      "currentPrice": "32000",
+      "image": "photo_6.jpeg"
+    },
+    {
+      "id": "7",
+      "name": "Lẩu Thái Hải Sản",
+      "description": "Nước lẩu chua cay, tôm mực, cá, nấm, rau tươi, bún ăn kèm.",
+      "price": "200000",
+      "currentPrice": "170000",
+      "image": "photo_7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Phở Bò Hà Nội",
+      "description": "Bánh phở mềm, thịt bò tươi, nước dùng xương hầm, rau thơm, giá đỗ.",
+      "price": "50000",
+      "currentPrice": "40000",
+      "image": "photo_8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Bánh Tráng Trộn",
+      "description": "Bánh tráng, khô bò, xoài, trứng cút, rau răm, nước sốt me đặc biệt.",
+      "price": "20000",
+      "currentPrice": "15000",
+      "image": "photo_9.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Bánh Mì Thịt Nguội",
+      "description": "Bánh mì giòn, thịt nguội, pate, rau củ, dưa leo, nước sốt đặc trưng.",
+      "price": "30000",
+      "currentPrice": "25000",
+      "image": "photo_10.webp"
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": 2,
+      "items": [
+        {
+          "foodId": 1,
+          "quantity": 2
+        },
+        {
+          "foodId": 5,
+          "quantity": 1
+        }
+      ],
+      "status": "pending",
+      "createdAt": "2025-07-21T12:00:00Z"
+    }
+  ]
+}
